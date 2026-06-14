@@ -136,13 +136,13 @@ const ConferenceEvent = () => {
             });
         }
 
-        const totalCosts = {
-            venue: venueTotalCost,
-            av: avTotalCost,
-            meals: mealsTotalCost,
-        };
+//        const totalCosts = {
+//            venue: venueTotalCost,
+//            av: avTotalCost,
+//            meals: mealsTotalCost,
+//        };
 
-        const total_amount = totalCosts.venue + totalCosts.av + totalCosts.meals;
+//        const total_amount = totalCosts.venue + totalCosts.av + totalCosts.meals;
 
         return totalCost;
     };
@@ -152,7 +152,7 @@ const ConferenceEvent = () => {
     const avTotalCost = calculateTotalCost("av");
     const mealsTotalCost = calculateTotalCost("meals");
 
-//    const totalCosts = venueTotalCost + avTotalCost + mealsTotalCost;
+    const totalCosts = venueTotalCost + avTotalCost + mealsTotalCost;
 
     const navigateToProducts = (idType) => {
         if (idType == '#venue' || idType == '#addons' || idType == '#meals') {
