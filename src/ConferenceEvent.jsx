@@ -117,7 +117,6 @@ const ConferenceEvent = () => {
             </div>
         </>
     };
-    
 
     const calculateTotalCost = (section) => {
         let totalCost = 0;
@@ -142,6 +141,8 @@ const ConferenceEvent = () => {
             av: avTotalCost,
             meals: mealsTotalCost,
         };
+
+        const total_amount = totalCosts.venue + totalCosts.av + totalCosts.meals;
         
     return totalCost;
     };
